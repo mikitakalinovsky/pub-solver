@@ -9,6 +9,8 @@ import 'src/exceptions.dart';
 import 'src/pub_embeddable_command.dart';
 import 'src/system_cache.dart';
 
+export 'src/command/deps.dart' show DepsCommand;
+export 'src/entrypoint.dart' show Entrypoint;
 export 'src/executable.dart'
     show
         getExecutableForCommand,
