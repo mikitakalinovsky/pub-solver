@@ -15,10 +15,10 @@ export 'src/executable.dart'
         CommandResolutionFailedException,
         CommandResolutionIssue,
         DartExecutableWithPackageConfig;
+export 'src/package.dart';
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec;
 export 'src/solver.dart';
-
 
 /// Returns a [Command] for pub functionality that can be used by an embedding
 /// CommandRunner.
@@ -69,5 +69,6 @@ Future<void> ensurePubspecResolved(
 
 class ResolutionFailedException implements Exception {
   String message;
+
   ResolutionFailedException._(this.message);
 }
