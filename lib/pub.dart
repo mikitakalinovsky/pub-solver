@@ -19,6 +19,7 @@ export 'src/package.dart' show Package;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec;
 export 'src/solver.dart';
+export 'src/system_cache.dart' show SystemCache;
 
 /// Returns a [Command] for pub functionality that can be used by an embedding
 /// CommandRunner.
