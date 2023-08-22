@@ -15,7 +15,7 @@ export 'src/executable.dart'
         CommandResolutionFailedException,
         CommandResolutionIssue,
         DartExecutableWithPackageConfig;
-export 'src/package.dart';
+export 'src/package.dart' show Package;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec;
 export 'src/solver.dart';
