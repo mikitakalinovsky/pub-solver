@@ -18,6 +18,7 @@ export 'src/executable.dart'
         CommandResolutionIssue,
         DartExecutableWithPackageConfig;
 export 'src/package.dart' show Package;
+export 'src/package_graph.dart' show PackageGraph;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec;
 export 'src/solver.dart';
