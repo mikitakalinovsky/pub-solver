@@ -17,12 +17,16 @@ export 'src/executable.dart'
         CommandResolutionFailedException,
         CommandResolutionIssue,
         DartExecutableWithPackageConfig;
+export 'src/git.dart' show GitSource;
+export 'src/lock_file.dart' show LockFile;
 export 'src/package.dart' show Package;
 export 'src/package_graph.dart' show PackageGraph;
+export 'src/package_name.dart' show PackageId, PackageRef;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec, DependencyType;
 export 'src/solver.dart';
 export 'src/source/path.dart' show PathSource;
+export 'src/source/sdk.dart' show SdkSource;
 export 'src/system_cache.dart' show SystemCache;
 
 /// Returns a [Command] for pub functionality that can be used by an embedding
