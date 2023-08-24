@@ -18,10 +18,10 @@ export 'src/executable.dart'
         CommandResolutionIssue,
         DartExecutableWithPackageConfig;
 export 'src/lock_file.dart' show LockFile;
-export 'pub_embeddable_command.dart' show PubEmbeddableCommand;
 export 'src/package.dart' show Package;
 export 'src/package_graph.dart' show PackageGraph;
 export 'src/package_name.dart' show PackageId, PackageRef, PackageRange;
+export 'src/pub_embeddable_command.dart' show PubEmbeddableCommand;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec, DependencyType;
 export 'src/solver.dart';
