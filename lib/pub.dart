@@ -20,7 +20,7 @@ export 'src/executable.dart'
 export 'src/lock_file.dart' show LockFile;
 export 'src/package.dart' show Package;
 export 'src/package_graph.dart' show PackageGraph;
-export 'src/package_name.dart' show PackageId, PackageRef;
+export 'src/package_name.dart' show PackageId, PackageRef, PackageRange;
 export 'src/pub_embeddable_command.dart' show PubAnalytics;
 export 'src/pubspec.dart' show Pubspec, DependencyType;
 export 'src/solver.dart';
