@@ -374,6 +374,20 @@ class Pubspec extends PubspecBase {
       return DependencyType.none;
     }
   }
+
+  Pubspec join(Pubspec other) {
+    var dependencies = this.dependencies.entries.map((e) => e.value);
+    var devDependencies = this.devDependencies.entries.map((e) => e.value);
+    var overrides = dependencyOverrides.entries.map((e) => e.value);
+    var fields = this.fields..addAll(other.fields);
+    return Pubspec(
+      name,
+      dependencies: dependencies,
+      dependencyOverrides: overrides,
+      devDependencies: devDependencies,
+      fields: fields,
+    );
+  }
 }
 
 /// The type of dependency from one package to another.
