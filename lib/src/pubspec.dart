@@ -379,7 +379,7 @@ class Pubspec extends PubspecBase {
     var dependencies = this.dependencies.entries.map((e) => e.value);
     var devDependencies = this.devDependencies.entries.map((e) => e.value);
     var overrides = dependencyOverrides.entries.map((e) => e.value);
-    var fields = {}..addAll(fields)..addAll(other.fields);
+    var fields = {}..addAll(this.fields)..addAll(other.fields);
     return Pubspec(
       name,
       dependencies: dependencies,
