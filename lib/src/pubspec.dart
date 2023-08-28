@@ -388,6 +388,10 @@ class Pubspec extends PubspecBase {
       fields: fields,
     );
   }
+
+  YamlMap toMap() {
+    return YamlMap.wrap(fields);
+  }
 }
 
 /// The type of dependency from one package to another.
